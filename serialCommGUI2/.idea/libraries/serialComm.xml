@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="serialComm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/serialComm_jar/SourceFiles/serialComm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

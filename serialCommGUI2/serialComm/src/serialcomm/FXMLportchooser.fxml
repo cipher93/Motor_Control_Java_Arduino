@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<AnchorPane id="AnchorPane" prefHeight="174.0" prefWidth="450.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serialcomm.FXMLportchooserController">
+  <children>
+      <ToolBar prefHeight="48.0" prefWidth="450.0">
+         <items>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Welcome to MotoGuru" textAlignment="CENTER" textFill="#ff0303" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="80.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+    <Button fx:id="connectPortButton" layoutX="88.0" layoutY="124.0" mnemonicParsing="false" onAction="#connectPort" prefHeight="34.0" prefWidth="270.0" text="Open Port" />
+      <ButtonBar layoutX="11.0" layoutY="79.0" prefHeight="26.0" prefWidth="434.0">
+         <buttons>
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Desired Port">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+          <ComboBox fx:id="portsList" editable="false" onMouseClicked="#populateList" prefHeight="26.0" prefWidth="307.0" />
+         </buttons>
+      </ButtonBar>
+  </children>
+  <stylesheets>
+    <URL value="@fxmlportchooser.css" />
+  </stylesheets>
+</AnchorPane>
